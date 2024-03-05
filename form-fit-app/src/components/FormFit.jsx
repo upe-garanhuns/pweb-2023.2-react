@@ -1,17 +1,14 @@
 import React from 'react'
 
-const FormFit = (formfit) => {
+const FormFit = ({formfit}) => {
   return (
     <div className='formfit'>
-    <div className='content'>
-      <p>{formfit.nome}</p>
-      <p className='category'>({formfit.category})</p>  
+        <div className='content'>
+            <h1>Lista de Alunos</h1>
+            <p>{formfit.nome}</p>
+            <p>{formfit.email}</p>
+        </div>
     </div>
-    <div>
-      <button>Completar</button>
-      <button>X</button>
-    </div>
-  </div>
   )
 }
 
