@@ -1,6 +1,11 @@
 import { useState } from "react"
+import { useFetch } from "../hooks/useFetch";
+
+const url = "http://localhost:3000/pessoas"
 
 const Form = () => {
+
+  const {data: items, httpConfig} = useFetch(url);
 
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
@@ -22,9 +27,15 @@ const Form = () => {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log({ nome, email, senha, dataNascimento, sexo, telefone, peso, altura, alimentosPreferidos });
+    // console.log({ nome, email, senha, dataNascimento, sexo, telefone, peso, altura, alimentosPreferidos });
+
+    const pessoa = {
+        nome, email, senha, dataNascimento, sexo, telefone, peso, altura, alimentosPreferidos
+    }
+
+    httpConfig(pessoa, "POST");
 
     setNome("");
     setEmail("");
