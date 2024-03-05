@@ -1,0 +1,34 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Rafael",
+      "email": "rafael@gmail.com",
+      "senha": "bolinha",
+      "dataNascimento": "2000-10-13",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "55",
+      "altura": "155",
+      "alimentosPreferidos": [
+        "Ovo",
+        "Banana"
+      ]
+    },
+    {
+      "nome": "Guilherme",
+      "email": "teste@teste.com",
+      "senha": "bolinha",
+      "dataNascimento": "2004-07-19",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "95",
+      "altura": "183",
+      "alimentosPreferidos": [
+        "Suco",
+        "Banana"
+      ],
+      "id": 2
+    }
+  ]
+}
