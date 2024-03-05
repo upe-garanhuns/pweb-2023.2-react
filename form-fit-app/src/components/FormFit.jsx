@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Todo = () => {
+const FormFit = (formfit) => {
   return (
-    <div></div>
+    <div className='formfit'>
+    <div className='content'>
+      <p>{formfit.nome}</p>
+      <p className='category'>({formfit.category})</p>  
+    </div>
+    <div>
+      <button>Completar</button>
+      <button>X</button>
+    </div>
+  </div>
   )
 }
 
-export default Todo
+export default FormFit
