@@ -50,7 +50,6 @@ const Form = () => {
 
   return (
     <div>
-        <h1>Cadastro</h1>
         <form onSubmit={handleSubmit}>
             <label>
                 <span>Nome: </span>
@@ -86,8 +85,7 @@ const Form = () => {
             <label>
                 <span>Altura: </span>
                 <input type="number" name="altura" placeholder="Digite a sua altura em cm" value={altura} onChange={(e) => setAltura(e.target.value)} required />
-            </label>
-            <input type="submit"/> 
+            </label> 
             <label>
                 <span>Alimentos Preferidos: </span>
                 <div>
@@ -103,6 +101,7 @@ const Form = () => {
                     <input type="checkbox" name="alimento3" value="Banana" checked={alimentosPreferidos.includes("Banana")} onChange={handleAlimentosPreferidosChange}/>
                 </div>
             </label>
+            <input type="submit" value="Enviar" />
         </form>
     </div>
   )
