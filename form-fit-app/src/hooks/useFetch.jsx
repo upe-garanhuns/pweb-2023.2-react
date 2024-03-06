@@ -38,7 +38,6 @@ export const useFetch = (url) => {
 
   //POST
   useEffect(() => {
-
     const httpRequest = async () => {
         let json;
 
@@ -55,4 +54,3 @@ export const useFetch = (url) => {
 
   return {data, httpConfig}
 }
-
