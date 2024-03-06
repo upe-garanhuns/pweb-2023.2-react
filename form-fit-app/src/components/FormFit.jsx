@@ -1,12 +1,12 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
-const FormFit = ({formfit}) => {
+const FormFit = ({pessoa}) => {
   return (
     <div className='formfit'>
         <div className='content'>
-            <h1>Lista de Alunos</h1>
-            <p>{formfit.nome}</p>
-            <p>{formfit.email}</p>
+            <p>{pessoa.nome}</p>
+            <p>{pessoa.email}</p>
+            <Link to={`/perfil/${pessoa.id}`}>Detalhes</Link>
         </div>
     </div>
   )

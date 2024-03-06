@@ -20,6 +20,21 @@ export const useFetch = (url) => {
         setMethod(method);
     }
   }
+  
+  //GET
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        setData(json);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    
+    fetchData();
+  }, [url, callFetch])
 
   //POST
   useEffect(() => {
