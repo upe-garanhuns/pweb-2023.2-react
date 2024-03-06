@@ -5,11 +5,11 @@ const ProfilePage = ({ dadosAluno }) => {
     <div className="profile-page-container">
       <h1 className="profile-page-title">DADOS DO ALUNO</h1>
       <div className="personal-data-section">
-        <img
+        {/* <img
           src={dadosAluno.photoPath}
           alt="Foto do Perfil"
           className="profile-photo"
-        />
+        /> */}
         <div className="profile-data">
           <div className="side">
             <p>
@@ -54,14 +54,14 @@ const ProfilePage = ({ dadosAluno }) => {
           </p>
         </div>
 
-        <div className="favorites-section">
+        {/* <div className="favorites-section">
           <span>Alimentos Preferidos</span>
           <ul>
             {dadosAluno.preferidos.map((elemento, indice) => (
               <li key={indice}>{elemento.comida}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
