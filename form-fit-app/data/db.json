@@ -1,0 +1,78 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Rafael",
+      "email": "rafael@gmail.com",
+      "senha": "bolinha",
+      "dataNascimento": "2000-10-13",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "55",
+      "altura": "155",
+      "alimentosPreferidos": [
+        "Ovo",
+        "Banana"
+      ]
+    },
+    {
+      "nome": "Guilherme",
+      "email": "teste@teste.com",
+      "senha": "bolinha",
+      "dataNascimento": "2004-07-19",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "95",
+      "altura": "183",
+      "alimentosPreferidos": [
+        "Suco",
+        "Banana"
+      ],
+      "id": 2
+    },
+    {
+      "nome": "bia",
+      "email": "bia@gmail.com.br",
+      "senha": "navio",
+      "dataNascimento": "2005-09-24",
+      "sexo": "feminino",
+      "telefone": "(87)9987-8090",
+      "peso": "70",
+      "altura": "169",
+      "alimentosPreferidos": [
+        "Ovo",
+        "Suco"
+      ],
+      "id": 3
+    },
+    {
+      "nome": "alexandre",
+      "email": "alexandre@gmail.com",
+      "senha": "bola",
+      "dataNascimento": "1989-09-08",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "100",
+      "altura": "200",
+      "alimentosPreferidos": [
+        "Ovo",
+        "Banana"
+      ],
+      "id": 4
+    },
+    {
+      "nome": "oliver",
+      "email": "oliver@hotmail.com",
+      "senha": "rotulo",
+      "dataNascimento": "1999-12-01",
+      "sexo": "masculino",
+      "telefone": "(87)4002-8922",
+      "peso": "95",
+      "altura": "200",
+      "alimentosPreferidos": [
+        "Suco"
+      ],
+      "id": 5
+    }
+  ]
+}
