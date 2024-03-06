@@ -1,17 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
+import ProfilePage from "../components/ProfilePage";
 
-import ProfilePage from "../components/ProfilePage"
+const url = "http://localhost:3000/pessoas";
 
 const Perfil = () => {
-
-  const {id} = useParams();
+  const { id } = useParams();
+  const {data: pessoa} = useFetch(url + `/${id}`)
 
   return (
     <div>
-        <h1>Perfil {id} </h1>
-        {/* <ProfilePage /> */}
+      <h1>Perfil {id}</h1>
+      {pessoa ? 
+        <ProfilePage dadosAluno={pessoa}/> 
+      : <p>Carregando...</p>}
+      
     </div>
-  )
-}
+  );
+};
 
-export default Perfil
+export default Perfil;
