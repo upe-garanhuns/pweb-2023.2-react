@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+  .app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: #efefef;
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+  .card {
+    padding: 2em;
+  }
+
+  .read-the-docs {
+    color: #888;
+  }
+
+  .add-product {
+    border-top: 1px solid #000;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
