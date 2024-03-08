@@ -1,4 +1,4 @@
-import "../styles/ProfilePage.css";
+import "../styles/Profile.css";
 
 const ProfilePage = ({ dadosAluno }) => {
   return (
