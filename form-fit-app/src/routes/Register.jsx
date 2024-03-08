@@ -1,13 +1,13 @@
 import Form from "../components/Form"
 
-const Cadastro = () => {
+const Register = () => {
 
   return (
     <div>
-        <h1>Página Cadastro</h1>
+        <h1>Página Register</h1>
         <Form />
     </div>
   )
 }
 
-export default Cadastro
+export default Register
