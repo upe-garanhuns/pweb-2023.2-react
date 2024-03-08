@@ -1,0 +1,27 @@
+.formfit{
+    display: flex;
+    justify-content: center;
+    margin: 30px 300px;
+    background-color: #141BE0;
+}
+
+.content{
+    margin: 10px 0;
+}
+
+p{
+    margin: 5px;
+    color: white;
+}
+
+.nome {
+    font-size: 30px;
+}
+
+.email, .numero{
+    font-size: 22px;
+}
+
+.detalhes{
+    font-size: 17px;
+}
