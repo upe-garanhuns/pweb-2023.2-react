@@ -73,6 +73,20 @@
         "Suco"
       ],
       "id": 5
+    },
+    {
+      "nome": "Matheus Interaminense",
+      "email": "matheus.interaminense.guerra@gmail.com",
+      "senha": "123123",
+      "dataNascimento": "2003-09-15",
+      "sexo": "masculino",
+      "telefone": "81996742050",
+      "peso": "70.4",
+      "altura": "100",
+      "alimentosPreferidos": [
+        "Ovo"
+      ],
+      "id": 6
     }
   ]
 }

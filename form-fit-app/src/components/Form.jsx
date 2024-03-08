@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useFetch } from "../hooks/useFetch";
+import "../styles/Form.css";
 
 const url = "http://localhost:3000/pessoas"
 
@@ -49,7 +50,7 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className="forms">
         <form onSubmit={handleSubmit}>
             <label>
                 <span>Nome: </span>
@@ -68,11 +69,8 @@ const Form = () => {
                 <input type="date" name="data_nascimento" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required />
             </label>
             <label>
-                <span>Sexo: </span>
-                <select name="sexo" value={sexo} onChange={(e) => setSexo(e.target.value)} required>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                </select>
+                <span>Altura: </span>
+                <input type="number" name="altura" placeholder="Digite a sua altura em cm" value={altura} onChange={(e) => setAltura(e.target.value)} required />
             </label>
             <label>
                 <span>Telefone: </span>
@@ -83,25 +81,30 @@ const Form = () => {
                 <input type="number" name="peso" placeholder="Digite o seu peso" value={peso} onChange={(e) => setPeso(e.target.value)} required />
             </label>
             <label>
-                <span>Altura: </span>
-                <input type="number" name="altura" placeholder="Digite a sua altura em cm" value={altura} onChange={(e) => setAltura(e.target.value)} required />
-            </label> 
+                <span>Sexo: </span>
+                <select name="sexo" value={sexo} onChange={(e) => setSexo(e.target.value)} required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </label>
             <label>
                 <span>Alimentos Preferidos: </span>
+                <div className="checkboxs">
                 <div>
-                    <label htmlFor="alimento1">Ovo</label>
                     <input type="checkbox" name="alimento1" value="Ovo" checked={alimentosPreferidos.includes("Ovo")} onChange={handleAlimentosPreferidosChange}/>
+                    <label htmlFor="alimento1">Ovo</label>
                 </div>
                 <div>
-                    <label htmlFor="alimento2">Suco</label>
                     <input type="checkbox" name="alimento2" value="Suco" checked={alimentosPreferidos.includes("Suco")} onChange={handleAlimentosPreferidosChange}/>
+                    <label htmlFor="alimento2">Suco</label>
                 </div>
                 <div>
-                    <label htmlFor="alimento3">Banana</label>
                     <input type="checkbox" name="alimento3" value="Banana" checked={alimentosPreferidos.includes("Banana")} onChange={handleAlimentosPreferidosChange}/>
+                    <label htmlFor="alimento3">Banana</label>
+                </div>
                 </div>
             </label>
-            <input type="submit" value="Enviar" />
+            <input className="input-enviar" type="submit" value="Enviar" />
         </form>
     </div>
   )
