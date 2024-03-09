@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 
 import Home from './routes/Home.jsx'
-import Cadastro from './routes/Cadastro.jsx'
+import Cadastro from './routes/Register.jsx'
 import Perfil from './routes/Perfil.jsx'
 
 const router = createBrowserRouter([

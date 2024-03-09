@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-import ProfilePage from "../components/ProfilePage";
+import ProfilePage from "../components/Profile";
 
 const url = "http://localhost:3000/pessoas";
 
