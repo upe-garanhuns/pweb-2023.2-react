@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom"
 import "../styles/NavBar.css";
 import { BsHouseDoorFill, BsFillFileEarmarkPlusFill } from "react-icons/bs";
-import "../assets/logo.jpeg"
 
 const NavBar = () => {
   return (
