@@ -5,7 +5,7 @@ nav{
     justify-content: space-between;
     background-color: #141BE0;
     color: white;
-    padding: 0 0.5rem;
+    padding: 0 2rem;
 }
 
 nav img{
@@ -17,13 +17,14 @@ nav img{
 nav h1{
     font-size: 1.3rem;
     align-self: center;
+    text-decoration: none;
 }
 
 .links{
     right: 5%;
     display: flex;
     flex-direction: row;
-    gap: 1rem;  
+    gap: 1rem;
 }
 
 .nav-link{
@@ -35,5 +36,3 @@ nav p {
     text-decoration: none;
     color: white;
 }
-
-

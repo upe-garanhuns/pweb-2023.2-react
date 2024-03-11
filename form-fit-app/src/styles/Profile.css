@@ -1,7 +1,8 @@
 .profile-page-container{
-  background-color: #141BE0;
+  background-color: #2943c5;
   margin: 1rem 5rem;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 .profile-page-title {
