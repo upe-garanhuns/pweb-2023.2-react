@@ -1,13 +1,17 @@
 import { NavLink } from "react-router-dom"
 import "../styles/NavBar.css";
 import { BsHouseDoorFill, BsFillFileEarmarkPlusFill } from "react-icons/bs";
-import "../assets/logo.jpeg"
 
 const NavBar = () => {
   return (
     <nav>
-      <img src="" alt="Logo" />
-      <h1>FormFit</h1>
+      <NavLink style={({ isActive}) => {
+          return {
+            color: isActive ? "white" : "#141BE0",
+          };
+        }}>
+        <h1>FormFit</h1>
+      </NavLink>
       <div className="links">
         <NavLink className="nav-link" 
         to="/"
