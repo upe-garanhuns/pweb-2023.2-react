@@ -781,7 +781,7 @@ Para introduzir essa seção decidi colocar a citação de um **desenvolvedor do
 No React, os componentes descrevem qualquer comportamento componível, e isso inclui renderização, ciclo de vida e estado. Algumas bibliotecas externas, como Relay, aumentam os componentes com outras responsabilidades, como descrever dependências de dados."
 
 #### 3.1.2.1 O que faz a Composição ser superior?
-##### 3.1.2.1.1 Contenção 
+##### 3.1.2.1.1 Contenção
 Alguns componentes não tem como saber quem serão seus elementos filhos. Isso é muito comum para componentes como o SideBar ou Dialog que representam “caixas” genéricas.
 
 Recomendasse que esses componentes utilizem a prop especial children para passar os elementos filhos diretos para sua respectiva saída:
@@ -906,7 +906,7 @@ function BotaoTema() {
 }
 ```
 
-## 3.4 Padrão Observer 
+## 3.4 Padrão Observer
 O padrão Observer permite que um componente notifique e atualize outros componentes sobre mudanças no estado ou nos dados sem que esses componentes precisem estar cientes uns dos outros. Em componentes funcionais, você pode implementar esse padrão usando Context API do React para gerenciamento global dos estados.
 
 O React, embora não siga o padrão Observer de maneira idêntica a outras bibliotecas, aplica o conceito por meio do **state** e **props**. Vamos explorar como os componentes no React observam mudanças no estado e reagem a essas alterações para renderizar a interface do usuário.
@@ -914,7 +914,7 @@ O React, embora não siga o padrão Observer de maneira idêntica a outras bibli
 ### 3.4.1 Exemplo Prático
 Neste exemplo, ThemeProvider é um componente observável que gerencia o estado do tema. ThemedButton é um componente observador que consome o contexto do tema. Quando o tema muda ThemeProvider, todos ThemedButton os componentes irão atualizar automaticamente seus estilos, demonstrando o poder do padrão Observer no React.
 
-![observer](.public/img/observer.png)
+![observer](public/img/observer.png)
 
 ## 3.5 Padrão Factory
 O padrão Factory é útil quando você precisa criar e retornar componentes dinamicamente com base em condições ou parâmetros específicos. Em componentes funcionais, você pode implementar esse padrão criando uma função de factory que gera e retorna instâncias dos componentes com base na entrada.
@@ -922,15 +922,15 @@ O padrão Factory é útil quando você precisa criar e retornar componentes din
 ### 3.5.1 Exemplo Prático
 Aqui ButtonFactory é uma função que gera componentes de  com estilos diferentes com base no parâmetro type. Essa abordagem permite criar facilmente vários tipos de botões invocando createButton com diferentes argumentos, tornando seu código mais dinâmico e adaptável.
 
-![factory](.public/img/factory.png)
+![factory](public/img/factory.jpeg)
 
 ## 3.6 Conclusão quanto ao uso de Design Patterns
-Os padrões de design React são ferramentas poderosas para estruturar e otimizar seus aplicativos React. 
+Os padrões de design React são ferramentas poderosas para estruturar e otimizar seus aplicativos React.
 
 Ao compreender e implementar esses padrões, você pode:
-- escrever códigos mais limpos, 
-- implementar sistemas de fácil manutenção, 
-- construir aplicativos robustos e escaláveis. 
+- escrever códigos mais limpos,
+- implementar sistemas de fácil manutenção,
+- construir aplicativos robustos e escaláveis.
 
 Experimente esses padrões em seus projetos e adapte-os às suas necessidades específicas.
 
@@ -1353,15 +1353,15 @@ Os principais benefícios do uso de **HOCs** são:
 # Seção 5 - Conclusões
 
 ## 5.1 Aprendizados com o Projeto
-Com a realização do projeto desenvolvemos diversas habilidades durante o desenvolvimento. 
+Com a realização do projeto desenvolvemos diversas habilidades durante o desenvolvimento.
 
 Alguns deles são:
 - Compreensão de componentese estado.
 - Roteamento e navegação.
-- Boas práticas de desenvolvimento front-end. 
+- Boas práticas de desenvolvimento front-end.
 - Integração de biblioteca.
 
-## 5.2 Uso da Gerência de Configuração 
+## 5.2 Uso da Gerência de Configuração
 Com o andamento do projeto foi visto o quão necessário é o uso da gerência de configuração em projetos de até pequeno porte.
 
 A gerência de configuração foi usada ativamente com:
@@ -1375,9 +1375,9 @@ A gerência de configuração foi usada ativamente com:
 ## 5.3 Usaremos o React novamente?
 **SIM!!** o React se mostrou uma ótima escolha para o desenvolvimento de aplicações, o uso da **Componentização** e **Reutilização** mostrou-se muito interessante, facilitando a criação de interfaces de forma organizada e de fácil manutenção.
 
-Além disso o **Ecossistema Ativo** e o **Suporte da Comunidade**, traz tranquilidade, uma vez que encontraremos diversas soluções para problemas comuns, bibliotecas e recursos. E também, a documentação oficial do React é bem extensa e sempre atualizada pelos desenvolvedores. 
+Além disso o **Ecossistema Ativo** e o **Suporte da Comunidade**, traz tranquilidade, uma vez que encontraremos diversas soluções para problemas comuns, bibliotecas e recursos. E também, a documentação oficial do React é bem extensa e sempre atualizada pelos desenvolvedores.
 
-## 5.4 Fontes 
+## 5.4 Fontes
 - https://tsh.io/blog/react-component-lifecycle-methods-vs-hooks/
 - https://medium.com/@tgholami react-function-components-lifecycle-8a6ede4b8c2e
 - https://legacy.reactjs.org/docs/state-and-lifecycle.html
